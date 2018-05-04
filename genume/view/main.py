@@ -358,3 +358,6 @@ class Item(FixedVBox):
     def on_mouse_leave(self, widget, event):
         self.removeClass("tab-hover")
         self.parent.get_window().set_cursor(Gdk.Cursor(Gdk.CursorType.ARROW))
+
+# class ScrollingItem:
+    
