@@ -23,7 +23,6 @@ REFRESH_ICON = "data/icons/refresh.png"
 WIDTH = 650
 HEIGHT = 400
 
-
 class MainWindow(Gtk.Window):
     selected_tab = None
 
@@ -97,6 +96,10 @@ class MainWindow(Gtk.Window):
 
     def generate_main_view(self, reg):
         """Generate and return the content of the window"""
+        
+        main_view = Gtk.Overlay()
+
+        self.load_css()
 
         main_view = Gtk.Overlay()
 
